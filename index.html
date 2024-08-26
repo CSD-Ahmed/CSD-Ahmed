@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>JavaScript Arrays</h1>
+    <h2>The push() Method</h2>
+
+    <p>The push method appends a new element to an array.</p>
+
+    <button onclick="myFunction()">Try it</button>
+    <button onclick="myFruit()">Press it</button>
+
+    <p id="demo"></p>
+    <p id="fruit"></p>
+
+    <script>
+      const fruits = ["Banana", "Orange", "Apple"];
+      document.getElementById("demo").innerHTML = fruits;
+
+      function myFunction() {
+        if (!fruits.includes("Lemon")) {
+          // Check if "Lemon" is already in the array
+          fruits.push("Lemon");
+        }
+        document.getElementById("demo").innerHTML = fruits;
+      }
+    </script>
+
+    <script>
+      const fruit = ["Strawberry", "Grape", "Watermelon"];
+      document.getElementById("fruit").innerHTML = fruit;
+
+      function myFruit() {
+        if (!fruit.includes("Blueberry")) {
+          // Check if "Strawberry" is already in the array
+          fruit.push("Blueberry");
+        }
+        document.getElementById("fruit").innerHTML = fruit;
+      }
+    </script>
+  </body>
+</html>
